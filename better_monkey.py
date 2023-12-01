@@ -10,12 +10,12 @@ for I in range(7):
     Row_E.append(int(sum(Row_E)/len(Row_E)))
     L.append(Row_E)
 print(f"Monkey 1","\t","Monkey 2","\t""Monkey3","\t","Average",end="")
-print()
+
 
 for I in range(7):
     for J in range(4):
         print(L[I][J],"\t","\t",end="")
-    print()
+
 List_of_food_eaten_by_Monkey_1=[]
 for I in range(7):
     for J in range(1):
