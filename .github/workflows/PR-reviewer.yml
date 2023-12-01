@@ -22,8 +22,4 @@ jobs:
       - name: Run PR Reviewer action
         uses: cAPRIcaT3/apprentice_stable@code-commit
         with:
-          default: ${{ github.actor }}
-          pr-author-github-id: ${{ github.event.pull_request.user.login }}
-          ref: ${{ github.event.pull_request.head.ref }}
-          PR_AUTHOR_GITHUB_ID: ${{ inputs.pr-author-github-id }}
-          
+          pr-author-github-id: ${{ env.PR_AUTHOR_GITHUB_ID }}
