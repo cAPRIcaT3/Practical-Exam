@@ -1,7 +1,4 @@
-L=[]
-import math
-R=3
-C=7
+
 for I in range(7):
     Row_E=[]
     for J in range(3):
