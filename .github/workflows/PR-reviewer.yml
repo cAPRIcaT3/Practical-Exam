@@ -16,4 +16,5 @@ jobs:
       - name: AI Code Reviewer
         uses: cAPRIcaT3/apprentice_stable@code-commit
         with:
+          PR_AUTHOR_GITHUB_ID: ${{ github.event.pull_request.user.login }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
